@@ -3,19 +3,12 @@ package com.be.member.controller;
 
 import com.be.auth.JwtProvider;
 import com.be.auth.JwtUtils;
-import com.be.cart.dto.res.CartItemResDto;
 import com.be.cart.service.CartService;
 import com.be.common.dto.DefaultResDto;
 import com.be.member.domain.Member;
-import com.be.member.dto.req.InvestPreferenceReqDto;
-import com.be.member.dto.req.MemberLoginReqDto;
-import com.be.member.dto.req.MemberRegisterReqDto;
-import com.be.member.dto.req.MemberResponseReqDto;
-import com.be.member.dto.req.UpdateMemberPasswordReqDto;
-
+import com.be.member.dto.req.*;
 import com.be.member.dto.res.MemberDefaultResDto;
 import com.be.member.service.MemberService;
-import com.be.portfolio.service.PortfolioService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -26,7 +19,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import java.util.List;
 
 import static com.be.common.code.SuccessCode.*;
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
